@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: auto;
+    place-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    
+    font-size: 40px;
+    cursor: pointer;
+    justify-content: center;    
+}
+
+.cell:hover{
+    background-color: white;
+}
+
+
+#restartButton:hover {
+    background-color: black;
+    color:white;
+    transition: all;
+    transition-duration: 500ms;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#restartButton{
+    margin-top: 20px;
+    padding: 5px;
+}
+#undoButton{
+    margin-top: 20px;
+    padding: 5px;
+}
